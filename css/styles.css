@@ -1,0 +1,32 @@
+#global-header 
+{
+/*background: -moz-linear-gradient(top, #7ca71e 0%, #487709 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #7ca71e), color-stop(100%, #487709));
+background: -webkit-linear-gradient(top, #7ca71e 0%, #487709 100%);
+background: -o-linear-gradient(top, #7ca71e 0%, #487709 100%);
+background: -ms-linear-gradient(top, #7ca71e 0%, #487709 100%);
+background: linear-gradient(top, #7ca71e 0%, #487709 100%);
+border-bottom: 1px solid #3e6906;*/
+background-color:rgb(255,255,255);
+height: 49px;
+left: 0;
+min-width: 1080px;
+position: absolute;
+text-align: center;
+top: 55px;
+width: 100%;
+z-index: 1099;
+}
+img.image
+{
+ width: 400px;
+    height: 300px;
+}
+.backcolor
+{
+background-color: #FFA500;
+}
+.menudivcolor
+{
+background-color: #000000;
+}
