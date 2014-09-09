@@ -125,12 +125,12 @@ function validate()
                          msz+="enter pincode number..";
                          flag=false;
                      }
-                     else if(lpn=6)
+                     else if(lpn<6)
                          {
                              msz+="pincode should be 6 digit..\n";
                              flag=false;
                          }
-                         else if(lph!=6)
+                         else if(lph>6)
                          {
                              msz+="pincode should be 6 digit..\n";
                              flag=false;
