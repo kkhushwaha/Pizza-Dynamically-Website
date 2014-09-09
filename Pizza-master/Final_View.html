@@ -39,6 +39,7 @@
 <div class="row" id="electronics">
 
 <script id="DetailsPageTemplate" type="text/x-handlebars-template"> 
+{{#each this}}
  <div class="col-lg-12">
     <h3>{{title}}</h3>
     <div class="thumbnail row">
@@ -49,31 +50,18 @@
        </div>
                            </div>
               <div class="label label-info price">
-                <span><h4>RS-{{Price}}</b>  </span>
+                <span><b>{{Price}}</b></span>
              
               </div>
 
             <div class="caption">
-            <p><h3>Hi Khemchandra,</h3><br/>
-We are pleased to inform that the following items in your order OD40719049190 with tracking number WSRC2717089469 have been delivered. 
-<br/><b>Thank you for shopping!</b><br/><br/>
+            <p>{{{Details}}}</p>
 
-
-
- 
-
-
-We have attached your invoices should you need them in the future. 
-Help us improve by sharing your valuable feedback below.<br/><br/> 
-
-How likely is it that you would recommend Flipkart to a friend or colleague? <br/><br/>
-</p></p>
-
-           
+            <p><a href="computer_detail.html" class="btn btn-primary btn-small" target="_blank" onclick="getAddData('{{ItemCode}}')">View Details</a><a href="https://details.html" class="btn target="_blank" btn-primary btn-small">Buy Now</a></p>
  </div>
  </div>
  </div>
-
+{{/each}}
 </script>
 </div>
 <script>
@@ -107,7 +95,7 @@ DataHomePage =  [
          }
 
 ];
-Data2 =  [
+DataPvg =  [
 
          {
          ItemCode:"",

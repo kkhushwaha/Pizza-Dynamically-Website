@@ -125,16 +125,12 @@ function validate()
                          msz+="enter pincode number..";
                          flag=false;
                      }
-                     else if(lpn<6)
+                     else if(lpn!=6)
                          {
                              msz+="pincode should be 6 digit..\n";
                              flag=false;
                          }
-                         else if(lph>6)
-                         {
-                             msz+="pincode should be 6 digit..\n";
-                             flag=false;
-                         }
+                        
 
 /////////////////////////////////////////////////////////
                      
@@ -229,7 +225,7 @@ function validate()
             <div class="row">
                 
                 <div class="register span6">
-                    <form action="kids.html" name="myForm" method="post" onsubmit="return validate()">
+                    <form action="confirm.html" name="myForm" method="post" onsubmit="return validate()">
                         <h2>Details Filling <span class="red"><strong>WOOT!!!!!!!</strong></span></h2>
 
                         
