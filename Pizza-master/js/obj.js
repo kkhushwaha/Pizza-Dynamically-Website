@@ -9,7 +9,7 @@ var test = '{"thumb":['
         var obj1 = JSON.parse(test);
 		 var i=0;
 		 
-		alert(obj1.thumb.length);
+		//alert(obj1.thumb.length);
 		
 		for(i=0;i<obj1.thumb.length;i++)
         {
