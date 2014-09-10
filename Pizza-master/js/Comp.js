@@ -121,16 +121,16 @@ ItemCode:"Kids2",
   ];
 
 var s = window.location.href;
-alert(s);
+//alert(s);
 var params = s.split('?');
 
-alert(params[1]);
-alert(DataHomePage);
-alert("length of an object"+DataHomePage.length);
+//alert(params[1]);
+//alert(DataHomePage);
+//alert("length of an object"+DataHomePage.length);
 
 if( params[1] == "Laptop1" )
 {
-  alert("hi");
+  //alert("hi");
  var templar= Handlebars.compile($("#DetailsPageTemplate").html());
      $('#electronics').append(templar(DataComputer));
 
