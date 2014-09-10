@@ -7,8 +7,9 @@
 
 <script  src="js/jquery-1.11.1.js"></script>
 <script  src="js/handlebars-v2.0.0.js"></script>
-<script src="js/DataObjectSrc.js"></script>
-<script src="js/Computer.js"></script>
+<!-- <script src="js/DataObjectSrc.js"></script> -->
+<script src="js/DetailView.js"></script>
+
 </head>
 
 <body>
@@ -50,12 +51,12 @@
        </div>
                            </div>
               <div class="label label-info price">
-                <span><b>{{Price}}</b></span>
+                <span><b>{{price}}</b></span>
              
               </div>
 
             <div class="caption">
-            <p>{{{Details}}}</p>
+            <p>{{{details}}}</p>
 
             <p><a href="computer_detail.html" class="btn btn-primary btn-small" target="_blank" onclick="getAddData('{{ItemCode}}')">View Details</a><a href="https://details.html" class="btn target="_blank" btn-primary btn-small">Buy Now</a></p>
  </div>

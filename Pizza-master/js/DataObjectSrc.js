@@ -10,7 +10,7 @@ $(document).ready(function ()
 
 Data = [
          {
-         ItemCode:"Laptop1",
+         ItemCode:"Electronic",
            src:"images/laptop.jpg",
            Details:"Asus Tablet(Gen 2) Electronics and sport, back together again.Ends August 26 at 9AM CT"
          },
