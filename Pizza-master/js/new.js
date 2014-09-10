@@ -1,4 +1,4 @@
-alert("hrrr");
+//alert("hrrr");
 /*
 DataKi= 
   [
@@ -37,15 +37,15 @@ ItemCode:"Kids2",
 function getAddData(ele)
 { 
 	alert(ele);
-  alert("hello");
+  //alert("hello");
 
   for (var i = 0 ; i < DataKi.length; i++) 
 {
-  alert(i);
+  //alert(i);
   
 for(var j = 0; j < DataKi.length; j++)
  {  
-  alert(j);
+  //alert(j);
 
    if(DataKi[i].ItemCode == ele)
    {
