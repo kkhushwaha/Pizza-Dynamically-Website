@@ -118,7 +118,7 @@ DataPvg =  [
 ];
 
 var s = window.location.href;
-alert(s);
+//alert(s);
 var params = s.split('?');
 
 //alert(params[1]);
