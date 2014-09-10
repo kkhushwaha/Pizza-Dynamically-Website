@@ -2,179 +2,123 @@
 
 <head>
 
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/styles.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
   
- <script>
+
+  <title>Passanger Details</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+
+function validateText(id)
+{
+  if($("#"+id).val()==null || $("#"+id).val()=="")
+  {
+    var div = $("#"+id).closest("div");
+    div.removeClass("has-success");
+    $("#glypcn"+id).remove();
+    div.addClass("has-error has-feedback");
+    div.append('<span id="glypcn'+id+'" class="glyphicon glyphicon-remove form-control-feedback"></span>');
+    return false;
+  }
+  else
+  {
+    var div = $("#"+id).closest("div");
+    div.removeClass("has-error");
+    div.addClass("has-success has-feedback");
+    $("#glypcn"+id).remove();
+    div.append('<span id="glypcn'+id+'" class="glyphicon glyphicon-ok form-control-feedback"></span>');
+    return true;
+  }
+}
 
 
 
 
 
 
-function validate()
-            {
-                var flag=true;
-                var msz="";
-                var num=0;
-                var ch=0;
-               // rl=window.document.form1.roll.value;
-                //nm=window.document.form1.name.value;
-                //ph=window.document.form1.phone.value;
-               
-                txtf=window.document.myForm.firstname.value;
-                 txtl=window.document.myForm.lastname.value;
-                  txtE=window.document.myForm.Email.value;
-                  // txtp1=window.document.myForm.password1.value;
-                   // txtp2=window.document.myForm.password2.value;
-                     txtph=window.document.myForm.phn.value;
-                     txtA=window.document.myForm.Address.value;
-                       txtC=window.document.myForm.City.value;
-                        txtS=window.document.myForm.State.value;
-                         txtCountry=window.document.myForm.Country.value;
-                          txtpincode=window.document.myForm.pincode.value;
-                    
-//////////////////////////////////////////////////////////
-                    
-                      if(txtf=="")
-                          {
-                              msz+="enter first name..";
-                              flag=false;
-                          }
 
 
+
+function validation()
+{
+
+var namepattern = /^[a-zA-Z ]+$/;
+
+  var dname = $("#name").val();
+  if(!namepattern.test(dname))
+  {
+  $("#name").focus();
+  $("#1").html("enter  name");
+  return false;
+  }
+  else  
+  {
+  $("#1").html("");
+  }
+}
+  
  
-                      if(txtl=="")
-                          {
-                              msz+="enter last name..";
-                              flag=false;
-                          }
+$(document).ready(
 
+    function()
+    {
+      $("#contactbtn").click(function()
+        {
+           if(!validateText("name"))
+          {
+            return false;
+          }
+          if(!validateText("username"))
+          {
+            return false;
+          }
+          if(!validateText("email"))
+          {
+            return false;
+          }
+          if(!validateText("password"))
+          {
+            return false;
+          }
+          
+         /*  if(!validateText("confirm_password"))
+          {
+            return false;
+          }*/
+           if(!validateText("address"))
+          {
+            return false;
+          }
+           if(!validateText("city"))
+          {
+            return false;
+          }
+           if(!validateText("state"))
+          {
+            return false;
+          }
+           if(!validateText("country"))
+          {
+            return false;
+          }
+           if(!validateText("pincode"))
+          {
+            return false;
+          }
 
-                            if(txtE=="")
-                                {
-                                    msz+="enter email\n";
-                                    flag=false;
-                                }
-                                else if(txtE.indexOf("@")<1 || txtE.indexOf(".")<3)
-                                {
-                                    msz+="invalid mail\n";
-                                    flag=false;
-                                }
+          $("form#contactform").submit();
 
+        });
+    }
 
+  );
 
-
-				
-                      if(txtA=="")
-                          {
-                             msz+="enter Address name..";
-                              flag=false;
-                          }
-
-
-
-
-                          lph=txtph.length;
-                 if(txtph=="")
-                     {
-                         msz+="enter phone number..";
-                         flag=false;
-                     }
-                     else if(lph>10)
-                         {
-                             msz+="number should not be more than 10 dogit..\n";
-                             flag=false;
-                         }
-                         else if(lph!=10)
-                         {
-                             msz+="number should be 10 dogit..\n";
-                             flag=false;
-                         }
-                              
-				
-				         if(txtC=="")
-                          {
-                              msz+="enter city name..";
-                              flag=false;
-                          }
-
-
-                          if(txtS=="")
-                          {
-                              msz+="enter state name..";
-                              flag=false;
-                          }
-
-                          if(txtCountry=="")
-                          {
-                              msz+="enter country name..";
-                              flag=false;
-                          }
-
-
-                          
-
-
-
-			  
-                         lpn=txtpincode.length;
-                 if(txtpincode=="")
-                     {
-                         msz+="enter pincode number..";
-                         flag=false;
-                     }
-                     else if(lpn!=6)
-                         {
-                             msz+="pincode should be 6 digit..\n";
-                             flag=false;
-                         }
-                        
-
-/////////////////////////////////////////////////////////
-                     
-                if(flag==false)
-                    {
-                        alert(msz);
-                        return false;
-                    }
-            }
-
-
-
-
-
-
-
-
-
-
-
-
-
-  </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</script>
    
 </head>
 
@@ -225,49 +169,85 @@ function validate()
             <div class="row">
                 
                 <div class="register span6">
-                    <form action="confirm.html" name="myForm" method="post" onsubmit="return validate()">
+                  <form method="post" id="contactform" action="confirm.html" role="form" >
+                   <!-- <form action="confirm.html" name="myForm" method="post" onsubmit="return validate()">-->
                         <h2>Details Filling <span class="red"><strong>WOOT!!!!!!!</strong></span></h2>
 
-                        
-                          <div class="row"> <label  >First Name</label></div>
-                        
-                       
-                      
-                       
-                        
-                        <input type="text" id="firstname" name="firstname" placeholder="enter your first name..." width="50" height="50"><br>
-                       
+        <div class="form-group">
+            
+            <label class="title">Name:<span class="required">*</span></label>
+            <input type="text" class="form-control" id="name" placeholder="Enter Name">
+            <span class="help-block">Please Enter both your First Name and Last Name</span>
+           
+          </div>
+           <div class="form-group">
+            <label for="username">username<span class="required">*</span></label>
+            <input type="text" class="form-control" id="username" placeholder="Enter username">
+            <span class="help-block">Please Enter User Name</span>
+           
+             
+         
+          </div>
+           <div class="form-group">
+            <label for="email">Email<span class="required">*</span></label>
+            <input type="text" class="form-control" id="email" placeholder="Enter email">
+            <span class="help-block">Please Enter email</span>
+            
+          </div>
 
-                        <label >Last Name</label> <input type="text" id="lastname" name="lastname" placeholder="enter your first name..."><br>
+            <div class="form-group">
+            <label for="password">password<span class="required">*</span></label>
+            <input type="text" class="form-control" id="password" placeholder="Enter password">
+            <span class="help-block">Please Enter password</span>
+            
+          </div>
 
-                        <label >Email</label><input type="text" id="Email" name="Email" placeholder="enter your Email"><br>
+ <!--<div class="form-group">
+            <label for="confirm_password">confirm password <span class="required">*</span></label>
+            <input type="text" class="form-control" id="confirm_password" placeholder="Enter confirm password">
+            <span class="help-block">Please Enter both your First Name and Last Name</span>
+           
+          </div>-->
 
-<!--<label >Password</label><input type="text" id="password1" name="password1" placeholder="enter your password"><br>
-<label >Confirm Password</label><input type="text" id="password2" name="password2" placeholder="enter your repassword"><br>-->
+ <div class="form-group">
+            <label for="address">address</label>
+            <input type="text" class="form-control" id="address" placeholder="Enter address">
+            <span class="help-block">Please Enter address</span>
+           
+          </div>
 
-                        <label >Phone No</label> <input type="text" id="phn" name="phn" placeholder="enter your phone number..."><br>
-                       
+ <div class="form-group">
+            <label for="city">city</label>
+            <input type="text" class="form-control" id="city" placeholder="Enter city">
+            <span class="help-block">Please Enter city</span>
+            
+          </div>
 
-                       
-                        
-                        <label >Address</label><input type="text" id="Address" name="Address" placeholder="enter your Address"><br>
-                        
-                        <div class="row"><label  >City </label></div>
-                        <input type="text" id="City" name="City" placeholder="enter your City name..." width="100" ><br>
-                        
-                        
-                        <div class="row"><label>State</label></div>
-                         <input type="text" id="State" name="State" placeholder="Enter the State"><br>
-                         
-                         <div class="row"><label >Country</label></div>
-                         <input type="text" id="Country" name="Country" placeholder="Enter the Country"><br>
+ <div class="form-group">
+            <label for="state">state</label>
+            <input type="text" class="form-control" id="state" placeholder="Enter state">
+            <span class="help-block">Please Enter state</span>
+             
+          </div>
 
-                        <label for="Pincode">PinCode</label>
-                        <input type="text" id="pincode" name="pincode" placeholder="Pincode"></br><bgr/><br/>
-                     
-                        <p><button input="submit"> Confirm</button>
-                          <a href="deal_listing.html" class="btn target="_blank" btn-primary btn-small">Prev</a></p>
-                    </form>
+ <div class="form-group">
+            <label for="country">country<span class="required">*</span></label>
+            <input type="text" class="form-control" id="country" placeholder="Enter country">
+            <span class="help-block">Please Enter country</span>
+           
+          </div>
+
+ <div class="form-group">
+            <label for="pincode">pincode</label>
+            <input type="text" class="form-control" id="pincode" placeholder="Enter pincode">
+            <span class="help-block">Please Enter pincode</span>
+             
+          </div>
+
+          
+          <button type="submit" id="contactbtn" class="btn btn-default">Submit</button>
+      </form>                 
+                          
                 </div>
             </div>
           </div>
@@ -387,5 +367,207 @@ WOOT LOGOS, SITE DESIGN, & CONTENT © WOOT, INC. 2004-2014. ALL RIGHTS RESERVED.
 </div>
 </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- End of the Footer -->
+<!--
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+
+function validateText(id)
+{
+  if($("#"+id).val()==null || $("#"+id).val()=="")
+  {
+    var div = $("#"+id).closest("div");
+    div.removeClass("has-success");
+    $("#glypcn"+id).remove();
+    div.addClass("has-error has-feedback");
+    div.append('<span id="glypcn'+id+'" class="glyphicon glyphicon-remove form-control-feedback"></span>');
+    return false;
+  }
+  else
+  {
+    var div = $("#"+id).closest("div");
+    div.removeClass("has-error");
+    div.addClass("has-success has-feedback");
+    $("#glypcn"+id).remove();
+    div.append('<span id="glypcn'+id+'" class="glyphicon glyphicon-ok form-control-feedback"></span>');
+    return true;
+  }
+}
+
+
+
+
+
+
+
+
+
+function validation()
+{
+
+var namepattern = /^[a-zA-Z ]+$/;
+
+  var dname = $("#name").val();
+  if(!namepattern.test(dname))
+  {
+  $("#name").focus();
+  $("#1").html("enter  name");
+  return false;
+  }
+  else  
+  {
+  $("#1").html("");
+  }
+}
+  
+  /*var passwordpattern = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/;
+  
+  var passwd = $("#password").val();
+  if(!passwordpattern.test(passwd))
+  {
+  $("#password").focus();
+  $("#2").html("enter your password");
+  return false;
+  }
+  else
+  {
+  $("#2").html("");
+  }
+  
+  var numberpattern= /^[0-9]/;
+  
+  var dpincode = $("#pincode").val();
+  if(!numberpattern.test(dpincode))
+  {
+  $("#pincode").focus();
+  $("#4").html("enter pincode");
+  return false;
+  }
+  else{
+  $("#4").html("");
+  }
+  
+
+}
+*/
+
+
+
+
+
+
+
+
+/*var passwordpattern = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/;
+var namepattern = /^[a-zA-Z ]+$/;  
+
+function loginValidation()
+{
+
+ var formemail = $("#email").val();
+if(!emailpattern.test(formemail)){
+    $("#email").focus();
+    $("#1").html("enter the valid email");
+    return false;
+    else{
+  $("#1").html("");
+  
+
+ }
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$(document).ready(
+
+    function()
+    {
+      $("#contactbtn").click(function()
+        {
+           if(!validateText("name"))
+          {
+            return false;
+          }
+          if(!validateText("username"))
+          {
+            return false;
+          }
+          if(!validateText("email"))
+          {
+            return false;
+          }
+          if(!validateText("password"))
+          {
+            return false;
+          }
+          
+           if(!validateText("confirm_password"))
+          {
+            return false;
+          }
+           if(!validateText("address"))
+          {
+            return false;
+          }
+           if(!validateText("city"))
+          {
+            return false;
+          }
+           if(!validateText("state"))
+          {
+            return false;
+          }
+           if(!validateText("country"))
+          {
+            return false;
+          }
+           if(!validateText("pincode"))
+          {
+            return false;
+          }
+
+          $("form#contactform").submit();
+
+        });
+    }
+
+  );
+
+</script>-->
+
 </body>
 </html>
