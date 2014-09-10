@@ -1,34 +1,4 @@
-﻿// sportsItem=[
-            // {
-			     // title:"Wilson Tennis Rackets",
-				 // src:"images\tennis.jpg",
-				 // dollar:"$",
-				 // price:"199.95",
-				 // details:"Grigor Dimitrov Uses Pro Staff 95S with Spin Effect Technology to Break Into the Top 10! Matte-Black is Gone: Wilson Unveils Graphics Package for New Pro Staff Racket Petra Kvitova Wins 2nd Wimbledon Title; Federer Runner-Up Collaboration Between Wilson and Roger Federer Results in New Wilson Pro Staff Line Kei Nishikor",
-				 // viewHref:"Details.html",
-				 // buyNowHref:"Passengers.html"
-			// },
-			// {
-				 // title:"Rollerblade Skates",
-				 // src:"images\skates.jpg",
-				 // dollar:"$",
-				 // price:"499",
-				 // details:"Rollerblade Igniter 100 Inline Skates - High end is within reach for any skater when 100mm wheels are paired with high cuff stability and Soft True Wrap for speed and enhanced support.",
-				 // viewHref:"Details.html",
-				 // buyNowHref:"Passengers.html"
-			// },
-			// {
-				 // title:"Cricket Kit",
-				 // src:"images\cricket.jpg",
-				 // dollar:"$",
-				 // price:"899",
-				 // details:"PUMA is one of the established firms in the field of manufacturing sportsâ€™ gear. Being one of the most desirable lifestyle accessories and sports gear manufacturer, their presence is felt on a worldwide basis. Established in 1948, PUMA has grown by leaps and bounds and become one of the most desired brands worldwide. As a world leader, their products are of superior quality and chosen to be the best by their loyal customers.",
-				 // viewHref:"Details.html",
-				 // buyNowHref:"Passengers.html"
-			// }
- // ];
- 
- 
+﻿
  $(document).ready(function()
  {
  electronicItem=[
@@ -60,6 +30,37 @@
 				 buyNowHref:"Passengers.html"
 			}
  ];
+ 
+ sportsItem=[
+            {
+			     title:"Wilson Tennis Rackets",
+				 src:"images\tennis.jpg",
+				 dollar:"$",
+				 price:"199.95",
+				 details:"Grigor Dimitrov Uses Pro Staff 95S with Spin Effect Technology to Break Into the Top 10! Matte-Black is Gone: Wilson Unveils Graphics Package for New Pro Staff Racket Petra Kvitova Wins 2nd Wimbledon Title; Federer Runner-Up Collaboration Between Wilson and Roger Federer Results in New Wilson Pro Staff Line Kei Nishikor",
+				 viewHref:"Details.html",
+				 buyNowHref:"Passengers.html"
+			},
+			{
+				 title:"Rollerblade Skates",
+				 src:"images\skates.jpg",
+				 dollar:"$",
+				 price:"499",
+				 details:"Rollerblade Igniter 100 Inline Skates - High end is within reach for any skater when 100mm wheels are paired with high cuff stability and Soft True Wrap for speed and enhanced support.",
+				 viewHref:"Details.html",
+				 buyNowHref:"Passengers.html"
+			},
+			{
+				 title:"Cricket Kit",
+				 src:"images\cricket.jpg",
+				 dollar:"$",
+				 price:"899",
+				 details:"PUMA is one of the established firms in the field of manufacturing sportsâ€™ gear. Being one of the most desirable lifestyle accessories and sports gear manufacturer, their presence is felt on a worldwide basis. Established in 1948, PUMA has grown by leaps and bounds and become one of the most desired brands worldwide. As a world leader, their products are of superior quality and chosen to be the best by their loyal customers.",
+				 viewHref:"Details.html",
+				 buyNowHref:"Passengers.html"
+			}
+ ];
+ 
  
  
 computerItem=[
