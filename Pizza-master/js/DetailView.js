@@ -154,11 +154,11 @@ var params = s.split('?');
 alert(params[1]);
 if( params[1] == "Electronic" )
 {
-  alert("hi");
+  //alert("hi");
  var templar= Handlebars.compile($("#DetailsPageTemplate").html());
- alert("after templar");
+ //alert("after templar");
      $('#electronics').append(templar(electronicItem));
-	 alert("after embbeding");
+	// alert("after embbeding");
 
 }
 else
