@@ -4,7 +4,10 @@
 
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
-
+<script  src="js/jquery-1.11.1.js"></script>
+<script  src="js/handlebars-v2.0.0.js"></script>
+<script src="js/DataObjectSrc.js"></script>
+<script src="js/new.js"></script>
 </head>
 
 <body>
@@ -31,65 +34,33 @@
 </form>
   </ul>
 </div>
-
-
-
-
-
   <div class="row" id="computers">
-  
-    <h3>Apple iMac ME089HN/A 27-Inch Desktop (NEWEST VERSION) by MacSlatch</h3>
+
+ <script id="DetailViewPageDisplay" type="text/x-handlebars-template">
+ 
+    <h3>{{{title}}}</h3>
     <div class="thumbnail row">
    <div class="col-lg-12">
         <div class="thumbnail">
-           <img class="image" src="images\imac.jpg" alt="apple">
+           <img class="image" src="{{src}}" alt="app">
               <div class="label label-info price">
-                <span class="glyphicon glyphicon-tag"><sup>$</sup>2344.945
+                <span class="glyphicon glyphicon-tag"><sup>$</sup>{{Price}}
                 </span>
               </div>
 
             <div class="caption">
-              <p>
-<b>Item specifics:</b>  </br>
-New: A brand-new, unused and undamaged item. See the seller's listing for full details. See all condition definitions</br></br>
-<b>Brand:</b>  </br>
-APPLE</br></br>
-<b>Memory:</b> </br>
-8 GB</br></br>
-<b>Model:</b>  </br>
-IMAC</br></br>
-<b>Hard Drive Capacity:</b></br>  
-1 TB</br></br>
-<b>Operating System:</b></br> 
-LION OS</br></br>
-<b>Bundled Items:</b></br>  
-Graphics Card, Keyboard, Mouse</br>
-Screen Size:  
-27"</br></br>
-<b>Warranty:</b></br> 
-Manufacturer Warranty</br>
-Chip Type:  
-Intel Core i5
-Duration: 
-1 year
-Processor Speed:  
-3.20 GHz
-Warranty Details: 
-SERVICE REPAIR
-Graphics Processing Type: 
-Dedicated Graphics GE FORCE 755 GC
-Partner Name: 
-APPLE INDIA </p>
-
-              <p><a href="Passenger_Details.html" class="btn btn-primary btn-small" target="_blank">Buy Now</a><a href="add_to_cart.html" class="btn target="_blank" btn-primary btn-small" >Add To Cart</a></p>
+                 <p> {{{Details}}}</p>
+               
+              <p><a href="Passenger_Details.html" class="btn btn-primary btn-small" target="_blank" >Buy Now</a><a href="Passenger_Details.html" class="btn target="_blank" btn-primary btn-small" >Add To Cart</a></p>
             </div>
         </div> 
       </div>   
     </div>
-  </div>
+  
 
+</script>
 
-
+</div>
 
 <ul class="pager">
   <li><a href="computer.html">Previous</a></li>
