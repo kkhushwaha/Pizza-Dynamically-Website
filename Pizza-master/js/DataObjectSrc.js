@@ -72,14 +72,14 @@ var templar= Handlebars.compile($("DetailsPageTemplate").html());
      $('#electronics').append(templar(Data));
 //document.write(divid);
 //alert(divid);
-/*
+*/
 for ( i = 0; i < Data.length; i++)
  {
   
   if(Data[i].ItemCode == "divid")
   {
-    alert(Data[i].ItemCode);
-    document.write(Data[i]);
+    //alert(Data[i].ItemCode);
+    //document.write(Data[i]);
        
            break;
    };
