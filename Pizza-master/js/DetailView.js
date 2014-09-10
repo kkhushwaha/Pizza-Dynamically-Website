@@ -151,7 +151,7 @@ shirtItem=[
 
 var s = window.location.href;
 var params = s.split('?');
-alert(params[1]);
+//alert(params[1]);
 if( params[1] == "Electronic" )
 {
   //alert("hi");
