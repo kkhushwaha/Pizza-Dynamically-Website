@@ -1,71 +1,106 @@
 <html>
 
 <head>
-
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
-
-<script  src="js/jquery-1.11.1.js"></script>
-<script  src="js/handlebars-v2.0.0.js"></script>
-<script src="js/DataObjectSrc.js"></script>
-<script src="js/Computer.js"></script>
+  <script  src="js/jquery-1.11.1.js"></script>
+  <script  src="js/handlebars-v2.0.0.js"></script>
+<!--   <script src="js/DataObjectSrc.js"></script> -->
+  <script src="js/DetailView.js"></script>
 </head>
 
 <body>
 
 <div class="backcolor">
-<div class="container">
-<img src="images/icon.png" align="left">
-</br></br><br/>
-<hr>
-<div class="menudivcolor">
-  <hr/>
-  <ul class="nav nav-tabs" role="tablist">
-    <div class="nav-collapse collapse navbar-responsive-collapse">
-      </div>
-      <li><a href="NightServ.html"><b>Woot!</b></a></li>
-      <li><a href="electronic.html"><b>Electronics!</b></a></li>
-      <li><a href="computer.html"><b>Computers!</b></a></li>
-      <li><a href="sport.html"><b>Sport!</b></a></li>
-      <li><a href="kids.html"><b>Kids!</b></a></li>
-      <li><a href="shirt.html"><b>Shirt!</b></a></li>
-      <form class="navbar-form">
-    <input type="text" class="form-control" placeholder="search this site...">
-    <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search" id="searchinput"></span></button>
-</form>
-  </ul>
-</div>
-<hr>
-<div class="row" id="electronics">
 
-<script id="DetailsPageTemplate" type="text/x-handlebars-template"> 
-{{#each this}}
- <div class="col-lg-12">
-    <h3>{{title}}</h3>
-    <div class="thumbnail row">
-      <div class="col-lg-6">
-        <div class="thumbnail">
-           <img class="image" src="{{src}}" alt="cam">
+  <div class="container">
+    <img src="images/icon.png" align="left">
+         </br></br><br/>
+		 
+     <hr>
+    <div class="menudivcolor">
+ <hr/>
+  
+      <ul class="nav nav-tabs" role="tablist">
+           <div class="nav-collapse collapse navbar-responsive-collapse">
+            </div>
+	  
+          <li><a href="NightServ.html"><b>Woot!</b></a></li>
+          <li><a href="electronic.html"><b>Electronics!</b></a></li>
+          <li><a href="computer.html"><b>Computers!</b></a></li>
+          <li><a href="sport.html"><b>Sport!</b></a></li>
+          <li><a href="kids.html"><b>Kids!</b></a></li>
+          <li><a href="shirt.html"><b>Shirt!</b></a></li>
+	  
+         <form class="navbar-form">
+             <input type="text" class="form-control" placeholder="search this site...">
+             <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search" id="searchinput"></span></button>
+         </form>
+       </ul>
+    </div>
+  <hr>
+    <div class="row" id="electronics">
+
+           <script id="DetailsPageTemplate" type="text/x-handlebars-template"> 
+                   {{#each this}}
+                       <div class="col-lg-12">
+                          <h3>{{title}}</h3>
+                              <div class="thumbnail row">
+                                 <div class="col-lg-6">
+                                    <div class="thumbnail">
+                                        <img class="image" src="{{src}}" alt="cam">
           
-       </div>
+                                    </div>
+                                 </div>
+                                      <div class="label label-info price">
+                                          <span><b>{{price}}</b></span>
+                                      </div>
+
+                                <div class="caption">
+                                     <p>{{{details}}}</p>
+
+                                      <p><a href="computer_detail.html" class="btn btn-primary btn-small" target="_blank" onclick="getAddData('{{ItemCode}}')">View Details</a><a href="https://details.html" class="btn target="_blank" btn-primary btn-small">Buy Now</a></p>
+                                 </div>
+								 
+                               </div>
                            </div>
-              <div class="label label-info price">
-                <span><b>{{Price}}</b></span>
-             
-              </div>
-
-            <div class="caption">
-            <p>{{{Details}}}</p>
-
-            <p><a href="computer_detail.html" class="btn btn-primary btn-small" target="_blank" onclick="getAddData('{{ItemCode}}')">View Details</a><a href="https://details.html" class="btn target="_blank" btn-primary btn-small">Buy Now</a></p>
- </div>
- </div>
- </div>
-{{/each}}
-</script>
-</div>
+                   {{/each}}
+           </script>
+    </div>
+<!-- <script>
 
 
+var s = window.location.href;
+
+var params = s.split('?');
+alert(params[1]);
+if( params[1] == "Electronic" )
+{
+  alert("hi");
+ var templar= Handlebars.compile($("#DetailsPageTemplate").html());
+     $('#electronics').append(templar(electronicItem));
+
+}
+else
+
+{
+    if( params[1] == "Camera" )
+   {
+   var templar= Handlebars.compile($("#DetailsPageTemplate").html());
+     $('#electronics').append(templar(DataCamera));
+   }
+   else
+   {
+    var templar= Handlebars.compile($("#DetailsPageTemplate").html());
+     $('#electronics').append(templar(DataKids));
+   }
+}
+
+
+
+ 
+
+</script> -->
 <div class="page-footer">
   <hr with="50%">
   <div class="row">
