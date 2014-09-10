@@ -1,7 +1,7 @@
 
 function First(src,Name,Detail)
 {
- alert("hello");
+ //alert("hello");
    this.src =src;
 	this.Name=Name;
 	this.Detail=Detail;
