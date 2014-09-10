@@ -72,7 +72,7 @@ var templar= Handlebars.compile($("DetailsPageTemplate").html());
      $('#electronics').append(templar(Data));
 //document.write(divid);
 //alert(divid);
-*/
+/*
 for ( i = 0; i < Data.length; i++)
  {
   
