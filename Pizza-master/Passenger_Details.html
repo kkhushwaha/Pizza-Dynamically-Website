@@ -21,10 +21,13 @@
     <div class="backcolor">
         <div class="container">
             <img src="images/icon.png" align="left">
-            </br></br><br />
+            <br />
+            <br />
+            <br />
             <hr>
             <div class="menudivcolor">
                 <hr />
+
                 <ul class="nav nav-tabs" role="tablist">
                     <div class="nav-collapse collapse navbar-responsive-collapse">
                     </div>
@@ -34,14 +37,12 @@
                     <li><a href="sport.html"><b>Sport!</b></a></li>
                     <li><a href="kids.html"><b>Kids!</b></a></li>
                     <li><a href="shirt.html"><b>Shirt!</b></a></li>
-                    <form class="navbar-form" method="get">
+                    <form class="navbar-form">
                         <input type="text" class="form-control" placeholder="search this site...">
                         <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search" id="searchinput"></span></button>
                     </form>
                 </ul>
             </div>
-
-
 
             <div class="header">
 
@@ -54,213 +55,259 @@
                         <a class="home" href="" rel="tooltip" data-placement="bottom" data-original-title="Home"></a>
                         <a class="blog" href="" rel="tooltip" data-placement="bottom" data-original-title="Blog"></a>
                     </div>
+
                 </div>
             </div>
-        </div>
 
-        <div class="register-container container">
-            <div class="col-sm-6 col-md-6">
+
+
+
+
+            <!--it was at line no 178 before at after col sm6-->
+
+
+
+
+            <div class="register-container container">
                 <div class="row">
 
-                    <div class="register span6">
-                        <form method="get" id="contactform" action="confirm.html" role="form">
-                            <!-- <form action="confirm.html" name="myForm" method="post" onsubmit="return validate()">-->
-                            <h2>Details Filling <span class="red"><strong>WOOT!!!!!!!</strong></span></h2>
+                    <div class="col-sm-6 col-md-6">
+                        <div class="register-container">
+                            <div class="register span6">
+                                <form method="post" id="contactform" action="confirm.html" role="form">
+                                    <h2>Details Filling <span class="red"><strong>WOOT!!!!!!!</strong></span></h2>
+                                    <div class="form-group">
 
-                            <div class="form-group">
+                                        <label class="title">Name:<span class="required">*</span></label>
+                                        <input type="text" class="form-control" id="name" placeholder="Enter Name">
+                                        <span class="help-block">Please Enter both your First Name and Last Name</span>
 
-                                <label class="title">Name:<span class="required">*</span></label>
-                                <input type="text" class="form-control" id="name" placeholder="Enter Name">
-                                <span class="help-block">Please Enter both your First Name and Last Name</span>
-
-                            </div>
-                            <div class="form-group">
-                                <label for="username">username<span class="required">*</span></label>
-                                <input type="text" class="form-control" id="username" placeholder="Enter username">
-                                <span class="help-block">Please Enter User Name</span>
-
-
-
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email<span class="required">*</span></label>
-                                <input type="text" class="form-control" id="email" placeholder="Enter email">
-                                <span class="help-block">Please Enter email</span>
-
-                            </div>
-
-                            <div class="form-group">
-                                <label for="password">password<span class="required">*</span></label>
-                                <input type="text" class="form-control" id="password" placeholder="Enter password">
-                                <span class="help-block">Please Enter password</span>
-
-                            </div>
-
-                            <!--<div class="form-group">
-            <label for="confirm_password">confirm password <span class="required">*</span></label>
-            <input type="text" class="form-control" id="confirm_password" placeholder="Enter confirm password">
-            <span class="help-block">Please Enter both your First Name and Last Name</span>
-           
-          </div>-->
-
-                            <div class="form-group">
-                                <label for="address">address</label>
-                                <input type="text" class="form-control" id="address" placeholder="Enter address">
-                                <span class="help-block">Please Enter address</span>
-
-                            </div>
-
-                            <div class="form-group">
-                                <label for="city">city</label>
-                                <input type="text" class="form-control" id="city" placeholder="Enter city">
-                                <span class="help-block">Please Enter city</span>
-
-                            </div>
-
-                            <div class="form-group">
-                                <label for="state">state</label>
-                                <input type="text" class="form-control" id="state" placeholder="Enter state">
-                                <span class="help-block">Please Enter state</span>
-
-                            </div>
-
-                            <div class="form-group">
-                                <label for="country">country<span class="required">*</span></label>
-                                <input type="text" class="form-control" id="country" placeholder="Enter country">
-                                <span class="help-block">Please Enter country</span>
-
-                            </div>
-
-                            <div class="form-group">
-                                <label for="pincode">pincode</label>
-                                <input type="text" class="form-control" id="pincode" placeholder="Enter pincode">
-                                <span class="help-block">Please Enter pincode</span>
-
-                            </div>
-
-
-                            <button type="submit" id="contactbtn" class="btn btn-default">Submit</button>
-                        </form>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="padding">
-                <div class="container">
-                    <div align="right">
-
-
-                        <div class="row" id="electronics">
-                            <div class="col-sm-6 col-md-6">
-
-                                <div class="thumbnail row">
-                                    <div class="col-lg-12">
-                                        <div class="thumbnail">
-                                            <img class="image" src="images/oreon cam.jpg" alt="cam">
-                                            <!--</div class="label label-info price">-->
-
-                                        </div>
                                     </div>
-                                </div>
+                                    <div class="form-group">
+                                        <label for="username">username<span class="required">*</span></label>
+                                        <input type="text" class="form-control" id="username" placeholder="Enter username">
+                                        <span class="help-block">Please Enter User Name</span>
 
-                                <div class="row" id="computers">
-                                    <div class="col-sm-6 col-md-6">
-
-                                        <div class="thumbnail row">
-                                            <div class="col-lg-12">
-                                                <div class="thumbnail">
-                                                    <img class="image" src="images\imac.jpg" alt="apple">
-                                                    <!-- </div class="label label-info price">-->
-
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="page-footer">
-                                <hr with="50%">
-                                <div class="row">
-                                    <div class="col-sm-2">
-                                        <br />
-                                        <h4>Community</h4>
-                                        <br />
-                                        Woots
-    <br />
-                                        World of Woot
-    <br />
-                                        Everything But Woot
 
 
                                     </div>
-                                    <div class="col-sm-2">
-                                        <br />
-                                        <h4>Blog</h4>
-                                        <br />
-                                        Woot
-    <br />
-                                        News
-    <br />
-                                        Laffs
-    <br />
-                                        Miscellanea
-
+                                    <div class="form-group">
+                                        <label for="email">Email<span class="required">*</span></label>
+                                        <input type="text" class="form-control" id="email" placeholder="Enter email">
+                                        <span class="help-block">Please Enter email</span>
 
                                     </div>
-                                    <div class="col-sm-2">
-                                        <br />
-                                        <h4>What Is Woot?</h4>
-                                        <br />
-                                        Woot FAQ
-    <br />
-                                        Woot Affiliates
-    <br />
-                                        Work for Woot
-    <br />
-                                        Product Recall Notices
-    <br />
-                                        Woot's Return Policy
-    <br />
-                                        Terms and Conditions
-    <br />
-                                        Privacy Policy
-    <br />
-                                        Write Us
 
+                                    <div class="form-group">
+                                        <label for="password">password<span class="required">*</span></label>
+                                        <input type="text" class="form-control" id="password" placeholder="Enter password">
+                                        <span class="help-block">Please Enter password</span>
 
                                     </div>
-                                    <div class="col-sm-2">
-                                        <br />
-                                        <h4>Ways To Woot</h4>
-                                        <br />
-                                        Facebook/woot
-    <br />
-                                        @Woot on Twitter
-    <br />
-                                        Woot Sale RSS
-    <br />
-                                        Woot Blog RSS
-    <br />
-                                        Or Make Your Own!
 
 
+                                    <div class="form-group">
+                                        <label for="address">address</label>
+                                        <input type="text" class="form-control" id="address" placeholder="Enter address">
+                                        <span class="help-block">Please Enter address</span>
+
                                     </div>
-                                    <div class="col-sm-4">
-                                        <h3>Mumbo Jumbo</h3>
-                                        <br />
-                                        Woot.com is operated by Woot Services LLC. Products on Woot.com are sold by Woot, Inc. Product narratives are for entertainment purposes and frequently employ literary point of view; the narratives do not express Woot's editorial opinion. Aside from literary abuse, your use of this site also subjects you to Woot's terms of use and privacy policy. Woot may designate a user comment as a Quality Post, but that doesn't mean we agree with or guarantee anything said or linked to in that post.
+
+                                    <div class="form-group">
+                                        <label for="city">city</label>
+                                        <input type="text" class="form-control" id="city" placeholder="Enter city">
+                                        <span class="help-block">Please Enter city</span>
+
                                     </div>
-                                </div>
-                                <hr>
-                                <h6 align="center">WOOT LOGOS, SITE DESIGN, & CONTENT © WOOT, INC. 2004-2014. ALL RIGHTS RESERVED.
-  <br />
-                                    <br />
-                                </h6>
+
+                                    <div class="form-group">
+                                        <label for="state">state</label>
+                                        <input type="text" class="form-control" id="state" placeholder="Enter state">
+                                        <span class="help-block">Please Enter state</span>
+
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="country">country<span class="required">*</span></label>
+                                        <input type="text" class="form-control" id="country" placeholder="Enter country">
+                                        <span class="help-block">Please Enter country</span>
+
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="pincode">pincode</label>
+                                        <input type="text" class="form-control" id="pincode" placeholder="Enter pincode">
+                                        <span class="help-block">Please Enter pincode</span>
+
+                                    </div>
+
+
+                                    <button type="submit" id="contactbtn" class="btn btn-default">Submit</button>
+                                </form>
+
                             </div>
+
+                            <!-- my code-->
                         </div>
                     </div>
-                    <!-- End of the Footer -->
+
+                    <div class="col-sm-6 col-md-6">
+                        <div class="register-container">
+
+                            <div class="register span6">
+
+
+                                <div class="thumbnail ">
+
+
+                                    <br />
+
+
+
+                                    <div class="thumbnail">
+                                        <br />
+
+                                        <img class="image" src="images/oreon cam.jpg" alt="cam">
+                                    </div>
+                                    <!-- <div class="label label-info price">
+
+                                             </div>-->
+                                </div>
+                            </div>
+
+
+
+                            <div class="register span6">
+
+                                <div class="thumbnail ">
+
+
+                                    <br />
+
+                                    <div class="thumbnail">
+
+                                        <br />
+
+
+                                        <img class="image" src="images/imac.jpg" alt="cam">
+                                    </div>
+                                    <!-- <div class="label label-info price">
+
+                                             </div>-->
+                                </div>
+                            </div>
+                            <div class="register span6">
+
+                                <div class="thumbnail ">
+
+
+                                    <br />
+
+                                    <div class="thumbnail">
+                                        <br />
+
+                                        <br />
+
+
+
+                                        <img class="image" src="images/sports.jpg" alt="cam">
+                                    </div>
+                                    <!-- <div class="label label-info price">
+
+                                             </div>-->
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+            <div class="page-footer">
+                <hr with="50%">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <br />
+                        <h4>Community</h4>
+                        <br />
+                        Woots
+                            <br />
+                        World of Woot
+                            <br />
+                        Everything But Woot
+
+
+                    </div>
+                    <div class="col-sm-2">
+                        <br />
+                        <h4>Blog</h4>
+                        <br />
+                        Woot
+                            <br />
+                        News
+                            <br />
+                        Laffs
+                            <br />
+                        Miscellanea
+
+
+                    </div>
+                    <div class="col-sm-2">
+                        <br />
+                        <h4>What Is Woot?</h4>
+                        <br />
+                        Woot FAQ
+                            <br />
+                        Woot Affiliates
+                            <br />
+                        Work for Woot
+                            <br />
+                        Product Recall Notices
+                            <br />
+                        Woot's Return Policy
+                            <br />
+                        Terms and Conditions
+                            <br />
+                        Privacy Policy
+                            <br />
+                        Write Us
+
+
+                    </div>
+                    <div class="col-sm-2">
+                        <br />
+                        <h4>Ways To Woot</h4>
+                        <br />
+                        Facebook/woot
+                            <br />
+                        @Woot on Twitter
+                            <br />
+                        Woot Sale RSS
+                            <br />
+                        Woot Blog RSS
+                            <br />
+                        Or Make Your Own!
+
+
+                    </div>
+                    <div class="col-sm-4">
+                        <h3>Mumbo Jumbo</h3>
+                        <br />
+                        Woot.com is operated by Woot Services LLC. Products on Woot.com are sold by Woot, Inc. Product narratives are for entertainment purposes and frequently employ literary point of view; the narratives do not express Woot's editorial opinion. Aside from literary abuse, your use of this site also subjects you to Woot's terms of use and privacy policy. Woot may designate a user comment as a Quality Post, but that doesn't mean we agree with or guarantee anything said or linked to in that post.
+                    </div>
+                </div>
+                <hr>
+                <h6 align="center">WOOT LOGOS, SITE DESIGN, & CONTENT Â© WOOT, INC. 2004-2014. ALL RIGHTS RESERVED.
+                        <br />
+                    <br />
+                </h6>
+            </div>
+            <!--</div>-->
+        </div>
+
+    </div>
 </body>
+
 </html>
